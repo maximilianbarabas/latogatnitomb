@@ -1,0 +1,32 @@
+<!--
+/* File: table.component.html
+Author: Barrabas Maximilian
+Copyright: 2022, Barabas Maximilian 
+Group: Szoft 2 N
+Date: 2023.01.10
+Github: https://github.com/maximilianbarabas
+Licenc: GNU GPL */
+-->
+
+<div class="text-center">
+<h2>Táblázat</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Megye</th>
+            <th>Terület</th>
+            <th>Népesség</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of data" >
+            <td>{{row.name}}</td>
+            <td>{{row.county}}</td>
+            <td>{{row.area}}</td>
+            <td>{{row.population}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
